@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">S K Mohamed Javidh</h2>
+            </div>
+
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
+                    <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+                    <li class="menu-list-items"><a class="links" href="#skills">Skills</a></li>
+                    <li class="menu-list-items"><a class="links" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">S K Mohamed Javidh</h1>
+                <h4 class="sub-heading">
+                    Computer Science Engineering Student with skills <br>
+                    in Web Development and programming using <br>
+                    HTML, CSS, JavaScript, PHP, MySQL, and Python
+                </h4>
+            </div>
+
+            <div class="intro-buttons">
+                <button class="btn common-btn" type="button"onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Hire Me</button>
+                <button class="btn ghost-btn" onclick="Resume()">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Portfolio</h1>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <h3 class="greet-heading blue-text">TODO List Web App</h3>
+                        <p class="small-para blue-text">Web Development</p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <h3 class="greet-heading blue-text">E-Commerce Website</h3>
+                        <p class="small-para blue-text">Web Development</p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <h3 class="greet-heading blue-text">Portfolio Website</h3>
+                        <p class="small-para blue-text">Web Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                I am a Computer Science Engineering student at B. S. Abdur Rahman Crescent Institute of Science and Technology, Chennai.
+                I am interested in web development and enjoy building simple applications using HTML, CSS, JavaScript, PHP, and MySQL.
+            </p>
+            <p>
+                I am currently learning and improving my skills by developing small projects and exploring new technologies.
+                I am looking for opportunities to gain practical experience and grow as a software developer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-heading">
+            <h1 class="my-heading text-center">My Skills</h1>
+        </div>
+
+        <div class="skills-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">HTML</h3>
+                        <p class="small-para">
+                            I use HTML to create the structure of web pages and organize content clearly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">CSS</h3>
+                        <p class="small-para">
+                            I use CSS to style web pages with layouts, colors, fonts, and responsive design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">JavaScript</h3>
+                        <p class="small-para">
+                            I use JavaScript to add interactivity and dynamic features to websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Python</h3>
+                        <p class="small-para">
+                            I use Python for programming, problem solving, and writing simple efficient code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">SQL</h3>
+                        <p class="small-para">
+                            I use SQL to store, retrieve, and manage data in relational databases.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">PHP</h3>
+                        <p class="small-para">
+                            I use PHP for backend development and connecting web applications with databases.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form" action="https://formsubmit.co/mohamedjavidh2k5@gmail.com" method="POST">
+                    <input class="form-controls" type="text" name="name" placeholder="Your Name" required>
+                    <input class="form-controls" type="email" name="email" placeholder="Your Email" required>
+                    <input class="form-controls" type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <textarea class="form-controls" name="message" placeholder="Write your message" rows="8" required></textarea>
+
+                    <input type="hidden" name="_subject" value="New Portfolio Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+
+                <div class="details">
+                    <h5 class="contact-sub-heading">EMAIL</h5>
+                    <p class="contact-text">mohamedjavidh2k5@gmail.com</p>
+                </div>
+
+                <div class="details">
+                    <h5 class="contact-sub-heading">PHONE</h5>
+                    <p class="contact-text">+91 9384124997</p>
+                </div>
+
+                <div class="details">
+                    <h5 class="contact-sub-heading">ADDRESS</h5>
+                    <p class="contact-text">Chennai, Tamil Nadu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2026 All rights reserved |
+                This portfolio website is created by S K Mohamed Javidh
+            </h4>
+
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.instagram.com/s.k_mohamed_javidh/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="mailto:mohamedjavidh2k5@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://github.com/javidh1012" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/mohamed-javidh2k5" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
