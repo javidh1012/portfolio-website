@@ -23,5 +23,5 @@ This is my personal portfolio website developed to showcase my skills, projects,
 ## 🌐 Live Demo
 - Portfolio Website https://javidh1012.github.io/portfolio-website/
 
-## 📬 Contact
-Feel free to reach out through the contact form on the website.
+## 👨‍💻 Author
+S K Mohamed Javidh
